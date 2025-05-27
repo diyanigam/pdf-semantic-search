@@ -1,13 +1,13 @@
 {
   "functions": {
-    "api/pdf-semantic-search.py": {
-      "runtime": "python3.11"
+    "api/index.py": {
+      "runtime": "python3.9"
     }
   },
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "api/pdf-semantic-search.py"
+      "src": "/(.*)",
+      "dest": "/api/index.py"
     }
   ]
 }
