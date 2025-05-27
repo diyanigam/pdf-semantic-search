@@ -1,13 +1,13 @@
 {
   "functions": {
-    "api/index.py": {
-      "runtime": "vercel-python@0.8.0"
+    "api/pdf-semantic-search.py": {
+      "runtime": "python3.11"
     }
   },
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "api/index.py"
+      "dest": "api/pdf-semantic-search.py"
     }
   ]
 }
